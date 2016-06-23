@@ -13,10 +13,12 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
+   // private ProgressBar progressBar;
     RecyclerView recyclerView;
     RecyclerView.Adapter adapter;
     RecyclerView.LayoutManager layoutManager;
@@ -29,10 +31,15 @@ public class MainActivity extends AppCompatActivity {
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setHasFixedSize(true);
+
+        //progressBar = (ProgressBar) findViewById(R.id.prog);
+        //progressBar.setVisibility(View.VISIBLE);
+        //setProgressBarIndeterminateVisibility(true);
         backgroundTask backgroundTask = new backgroundTask(MainActivity.this);
         arrayList= backgroundTask.getList();
         adapter = new RecyclerAdapter(getApplicationContext(),arrayList);
         recyclerView.setAdapter(adapter);
+
 
 
 

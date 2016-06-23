@@ -60,7 +60,9 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.MyView
             Email= (TextView) itemView.findViewById(R.id.email);
             groupImage= (ImageView) itemView.findViewById(R.id.imageview);
 
+
         }
     }
+
 
 }

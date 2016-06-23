@@ -41,7 +41,7 @@ public class BackgroundWorker extends AsyncTask <String,Void,String  >{
     @Override
   public String doInBackground(String... params) {
         String type= params[0];
-        String regestration_url ="http://192.168.1.8/creategroup.php";
+        String regestration_url ="http://192.168.101.14/creategroup.php";
 
         if(type.equals("create")){
             try {

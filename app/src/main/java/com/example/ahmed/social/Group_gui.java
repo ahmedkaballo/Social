@@ -38,7 +38,7 @@ public class Group_gui extends AppCompatActivity {
     Button button;
     EditText name , type , des;
     ImageView theGroupImage;
-    String json_url="http://192.168.1.8/jsondata.php";
+    String json_url="http://192.168.101.14/jsondata.php";
 
 
 

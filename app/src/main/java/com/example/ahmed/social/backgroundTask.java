@@ -19,7 +19,7 @@ import java.util.ArrayList;
  * Created by Ahmed on 6/19/2016.
  */
 public class backgroundTask {
-    String json_url = "http://192.168.1.8/getgroups.php";
+    String json_url = "http://192.168.101.14/getgroups.php";
 
     Context context;
     ArrayList<Contact> arrayList = new ArrayList<>();
